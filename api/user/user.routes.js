@@ -1,9 +1,10 @@
-'use strict'
 var express = require('express');
-var controller = require('./authentication.controler.js');
-
 var router = express.Router();
+var controller = require('./user.controller');
 
-router.post('/login',controller.login);
-router.post('/register',controller.register);
-module.export = router;
+router.get('/infoUser',controller.infoUser);
+router.post('/editUser/:id',controller.editUser);
+router.post('/logOut/:id',controller.logOut);
+router.post('/shop',controller.shop);
+router.get('/shop',controller.getShop);
+module.exports = router;
