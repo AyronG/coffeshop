@@ -73,4 +73,5 @@ var controller = {
 	shop:shop,
 	getShop: getShop
 }
+
 module.exports = controller;
